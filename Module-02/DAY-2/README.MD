@@ -1,22 +1,23 @@
-# Ex.No:2(B) ACCESS MODIFIERS
+# Ex.No:2(B) METHODS
+
+## QUESTION:
+Write a method void modifyValue(int num) that tries to modify the passed value(add passed value with 10) and print "Inside method: "+num .
+
+Show in main() that the original value does not change.
+
+After calling modifyValue(int num) method in main , print the "Outside method: "+num
 
 ## AIM:
-To develop a Java Program to display the addition number using private modifiers only.
+To write a Java program that demonstrates how primitive data is passed by value in methods.
 
 ## ALGORITHM :
 1.	Start the program.
-2.	Define a class named `addition`
-3.	Declare two private integer variables, `num1` and `num2`
-4.	Define a private method `add()` that:
-a)	Returns the sum of `num1` and `num2`
-5.	Define a public method `display(int n1, int n2)` that:
-a)	Assigns `n1` to `num1` and `n2` to `num2`
-b)	Calls the `add()` method and prints the result using `System.out.println`
-6.	Define the `main` method as static
-a)	Create an instance of the `addition` class called `ad`
-b)	Call the `display(8, 9)` method on the `ad` object
-7.	End
-
+2.	Import the necessary package 'java.util'
+3. Define a method modifyValue(int num) that adds 10 to num and prints it.
+4.	In main(), declare num and assign a value (e.g., 20).
+5.	Call modifyValue(num) to show modification inside the method.
+6.	Print the value of num outside the method to show it remains unchanged.
+7.	End the program.
 
 
 
@@ -24,16 +25,29 @@ b)	Call the `display(8, 9)` method on the `ad` object
 
 ## PROGRAM:
  ```
-/*
-Program to implement a access modifiers using Java
-Developed by: 
-RegisterNumber:  
-*/
+Program to implement a Methods using Java
+Developed by: KARTHIK A
+RegisterNumber:  21222522049
 ```
 
-## Sourcecode.java:
+## SOURCE CODE:
 
+```
+import java.util.Scanner;
+class prog {
+    public static void modifyValue(int num) {
+        num = num + 10;
+        System.out.println("Inside method: " + num);
+    }
 
+    public static void main(String[] args) {
+ Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        modifyValue(x);
+        System.out.println("Outside method: " + x);
+    }
+}
+```
 
 
 
@@ -41,9 +55,10 @@ RegisterNumber:
 
 ## OUTPUT:
 
+<img width="1154" height="333" alt="image" src="https://github.com/user-attachments/assets/74c788f6-c707-4fbf-92c1-8c14b3f6ee05" />
 
 
 ## RESULT:
-Thus the java program to display the addition number using private modifiers only was executed successfully.
+The program successfully shows that primitive data types in Java are passed by value, so changes inside the method don’t affect the original variable.
 
 
