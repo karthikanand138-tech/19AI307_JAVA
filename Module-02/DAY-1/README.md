@@ -1,33 +1,60 @@
-# Ex.No:2(A)  STATIC METHOD
+# Ex.No:2(A) CLASS AND OBJECT
+
+## QUESTION:
+Create a class Car with attributes brand, model, year. Create 2 objects and print their details.
 
 ## AIM:
-To create a java program for calculate cube of a number using static method.
+To create a class Car with attributes brand, model, year. Create 2 objects and print their details.
 
 ## ALGORITHM :
-1.  Start : Begin the process of calculating the cube of a number.
-2.	Declare a variable to store input : Declare an integer variable n to hold the number whose cube will be calculated.
-3.	Create a Scanner object : Create a Scanner object (sc) to read the input from the user.
-4.	Read input from the user : Prompt the user to input an integer value. The input value is stored in the variable n.
-5.	Call the cubecal function : Call the function cubecal(n) which computes the cube of the number by performing n * n * n.
-6.	Store the result : Store the result of the cubecal function in an integer variable result.
-7.	Output the result :
-8.	Print the cube of the number using System.out.println("Cube is: " + result);.
-9.	End the program.
+1. Start.
+
+2. Create a Car class with brand, model, and year.
+
+3. Create the first car object and assign its details.
+
+4. Create the second car object and assign its details.
+
+5. Print the details of the first car.
+
+6. Print the details of the second car and stop.
 
 
 
 
 ## PROGRAM:
  ```
-/*
-Program to implement a Static method using Java
-Developed by: 
-RegisterNumber:  
-*/
+Program to implement a Class and Objects using Java
+Developed by: KARTHIK
+RegisterNumber:  212225220049
 ```
 
-## Sourcecode.java:
+## SOURCE CODE:
 
+```
+class Car {
+    String brand;
+    String model;
+    int year;
+}
+
+public class prog {
+    public static void main(String[] args) {
+        Car car1 = new Car();
+        car1.brand = "Toyota";
+        car1.model = "Innova";
+        car1.year = 2022;
+
+        Car car2 = new Car();
+        car2.brand = "Hyundai";
+        car2.model = "i20";
+        car2.year = 2021;
+
+        System.out.println("Car 1: " + car1.brand + " " + car1.model + " " + car1.year);
+        System.out.println("Car 2: " + car2.brand + " " + car2.model + " " + car2.year);
+    }
+}
+```
 
 
 
@@ -36,8 +63,10 @@ RegisterNumber:
 
 ## OUTPUT:
 
+<img width="669" height="262" alt="image" src="https://github.com/user-attachments/assets/7dcbd736-436c-45ac-86f9-934d9be134ce" />
 
 
 ## RESULT:
-Thus the java program for calculate cube of a number using static method has been executed successfully.
+The program is successfully impletmented and output is verified. 
+
 
